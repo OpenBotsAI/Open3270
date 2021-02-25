@@ -459,8 +459,23 @@ namespace Open3270
 				sout.WriteLine("-------------------dump screen data -----------------");
 				currentConnection.ExecuteAction(false, "Fields");
 				sout.WriteLine("" + currentConnection.GetAllStringData(false));
-				this.CurrentScreenXML.Dump(sout);
 				sout.WriteLine("-------------------dump screen end -----------------");
+			}
+			else
+				throw new ApplicationException("ShowFields requires an active 'Audit' connection on the emulator");
+		}
+
+		/// <summary>
+		/// Gets fields and returns them as a string
+		/// </summary>
+		public string GetFields()
+		{
+			if (currentConnection == null) throw new TNHostException("TNEmulator is not connected", "There is no currently open TN3270 connection", null);
+
+			if (sout != null)
+			{
+				currentConnection.ExecuteAction(false, "Fields");
+				return currentConnection.GetAllStringData(false);
 			}
 			else
 				throw new ApplicationException("ShowFields requires an active 'Audit' connection on the emulator");
@@ -540,7 +555,7 @@ namespace Open3270
 		public string GetLastError()
 		{
 			if (currentConnection == null) throw new TNHostException("TNEmulator is not connected", "There is no currently open TN3270 connection", null);
-			return currentConnection.GetLastError();
+			return currentConnection.LastException;
 		}
 		/// <summary>
 		/// Set field value.

@@ -1,4 +1,5 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>8.0.50727</ProductVersion>
@@ -10,15 +11,14 @@
     </ApplicationIcon>
     <AssemblyKeyContainerName>
     </AssemblyKeyContainerName>
-    <AssemblyName>WinFX3270Library</AssemblyName>
+    <AssemblyName>OpenBots.Open3270Library</AssemblyName>
     <AssemblyOriginatorKeyFile>
     </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
-    <DelaySign>false</DelaySign>
     <OutputType>Library</OutputType>
-    <RootNamespace>WinFX3270Library</RootNamespace>
+    <RootNamespace>OpenBots.Open3270Library</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject>
     </StartupObject>
@@ -30,6 +30,24 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -53,6 +71,7 @@
     <WarningLevel>4</WarningLevel>
     <DebugType>full</DebugType>
     <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -76,6 +95,7 @@
     <WarningLevel>4</WarningLevel>
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System">
@@ -83,9 +103,6 @@
     </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
-    </Reference>
-    <Reference Include="System.Runtime.Serialization.Formatters.Soap">
-      <Name>system.runtime.serialization.formatters.soap</Name>
     </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
@@ -128,103 +145,130 @@
     <Compile Include="LogParser\TN3270HostParser.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TN3270E\Constants.cs" />
+    <Compile Include="TN3270E\Delegates.cs" />
+    <Compile Include="TN3270E\EventArgs.cs" />
     <Compile Include="TN3270E\TN3270API.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TN3270E\Enums.cs" />
     <Compile Include="TN3270E\X3270\Events.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TN3270E\X3270\NetBuffer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\actions.cs">
+    <Compile Include="TN3270E\X3270\Actions.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\AID.cs">
+    <Compile Include="TN3270E\X3270\AID.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\ansi.cs">
+    <Compile Include="TN3270E\X3270\Ansi.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\Appres.cs">
+    <Compile Include="TN3270E\X3270\Appres.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\CFormat.cs">
+    <Compile Include="TN3270E\X3270\TraceFormatter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\CG.cs">
+    <Compile Include="TN3270E\X3270\CharacterGenerator.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\Ctlr.cs">
+    <Compile Include="TN3270E\X3270\ControllerConstants.cs" />
+    <Compile Include="TN3270E\X3270\Controller.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\ExtendedAttribute.cs">
+    <Compile Include="TN3270E\X3270\ExtendedAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\Idle.cs">
+    <Compile Include="TN3270E\X3270\FieldAttribute.cs" />
+    <Compile Include="TN3270E\X3270\Idle.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\Keyboard.cs">
+    <Compile Include="TN3270E\X3270\Keyboard.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\print.cs">
+    <Compile Include="TN3270E\X3270\KeyboardConstants.cs" />
+    <Compile Include="TN3270E\X3270\Print.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\see.cs">
+    <Compile Include="TN3270E\X3270\See.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\sf.cs">
+    <Compile Include="TN3270E\X3270\SF.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\Tables.cs">
+    <Compile Include="TN3270E\X3270\Tables.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\tn3270e_header.cs">
+    <Compile Include="TN3270E\X3270\Tn3270eHeader.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270E\X3270\Stuff\Util.cs">
+    <Compile Include="TN3270E\X3270\Util.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="TN3270E\X3270\Telnet.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TN3270E\TelnetConstants.cs" />
     <Compile Include="TN3270E\X3270\TNTrace.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270Server\TN3270Server.cs">
+    <Compile Include="Server\TN3270Server.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270Server\TN3270ServerEmulationBase.cs">
+    <Compile Include="Server\TN3270ServerEmulationBase.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270Server\TN3270ServerException.cs">
+    <Compile Include="Server\TN3270ServerException.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TN3270Server\TNServerScreen.cs">
+    <Compile Include="Server\TNServerScreen.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WinFX.NET\Audit.cs">
+    <Compile Include="CommFramework\Audit.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WinFX.NET\ByteHandler.cs">
+    <Compile Include="CommFramework\ByteHandler.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WinFX.NET\ClientSocket.cs">
+    <Compile Include="CommFramework\ClientSocket.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WinFX.NET\Message.cs">
+    <Compile Include="CommFramework\Message.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WinFX.NET\Semaphore.cs">
+    <Compile Include="CommFramework\Semaphore.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="WinFX.NET\ServerSocket.cs">
+    <Compile Include="CommFramework\ServerSocket.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include=".editorconfig" />
     <None Include="Open3270.key" />
   </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PreBuildEvent>
