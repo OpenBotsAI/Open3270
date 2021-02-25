@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>OpenBots.Open3270</id>
-    <version>1.0.0.0</version>
-    <title>OpenBots Core</title>
+    <id>OpenBots.Open3270Library</id>
+    <version>1.4.0.0</version>
+    <title>OpenBots Open3270Library</title>
     <authors>OpenBots Inc</authors>
     <owners>OpenBots Inc</owners>
     <licenseUrl>https://github.com/OpenBotsAI/Open3270/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/OpenBotsAI/Open3270</projectUrl>
     <iconUrl>https://openbots.ai/wp-content/uploads/2020/11/Studio-Icon-256px.png</iconUrl>
-    <repository type="git" url="https://github.com/OpenBotsAI/OpenBots.Studio" branch="master" />
+    <repository type="git" url="https://github.com/OpenBotsAI/Open3270" branch="master" />
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Open3270 library for interacting with mainframe terminals</description>
+    <description>Library for interacting with TN3270 mainframe terminals.</description>
     <releaseNotes>https://openbots.ai/category/release-notes/</releaseNotes>
     <copyright>"Copyright � 2004-2017 Michael Warriner. All rights reserved. Released under the terms of the GNU Lesser General Public License as published by the Free Software Foundation."</copyright>
     <tags></tags>
