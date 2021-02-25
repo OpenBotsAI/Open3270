@@ -1,0 +1,74 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E582422F-6081-48BE-892D-AAA75999EDC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Open3270", "Open3270", "{6E8B3FEB-49D0-41A0-B954-4DD042AB7DC4}"
+	ProjectSection(SolutionItems) = preProject
+		..\documentation\Open3270\TerminalDemo.one = ..\documentation\Open3270\TerminalDemo.one
+		..\documentation\Open3270\ToDo.one = ..\documentation\Open3270\ToDo.one
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IBM 3270 Documentation", "IBM 3270 Documentation", "{CCD23DFC-B849-427F-A48C-AC0BCAEBDDD0}"
+	ProjectSection(SolutionItems) = preProject
+		..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 1-4.pdf = ..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 1-4.pdf
+		..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 10-.pdf = ..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 10-.pdf
+		..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 5.pdf = ..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 5.pdf
+		..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 6.pdf = ..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 6.pdf
+		..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 7-9.pdf = ..\documentation\IBM 3270 Documentation\IBM 3270 Data Stream Programmers Reference 7-9.pdf
+		..\documentation\IBM 3270 Documentation\PCOMM OIA Data.pdf = ..\documentation\IBM 3270 Documentation\PCOMM OIA Data.pdf
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBots.Open3270Library", "OpenBots.Open3270Library\OpenBots.Open3270Library.csproj", "{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Win32.Build.0 = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Win32.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6E8B3FEB-49D0-41A0-B954-4DD042AB7DC4} = {E582422F-6081-48BE-892D-AAA75999EDC0}
+		{CCD23DFC-B849-427F-A48C-AC0BCAEBDDD0} = {E582422F-6081-48BE-892D-AAA75999EDC0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE8099D4-AF63-494A-A725-65C8B3D87352}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.TextStylePolicy = $3
+		$1.inheritsSet = null
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.scope = text/x-csharp
+		$3.FileWidth = 80
+		$3.TabWidth = 3
+		$3.IndentWidth = 3
+		$3.scope = text/plain
+	EndGlobalSection
+EndGlobal
