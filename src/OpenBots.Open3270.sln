@@ -2,8 +2,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Open3270Library", "Open3270Library\Open3270Library.csproj", "{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{E582422F-6081-48BE-892D-AAA75999EDC0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Open3270", "Open3270", "{6E8B3FEB-49D0-41A0-B954-4DD042AB7DC4}"
@@ -22,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IBM 3270 Documentation", "I
 		..\documentation\IBM 3270 Documentation\PCOMM OIA Data.pdf = ..\documentation\IBM 3270 Documentation\PCOMM OIA Data.pdf
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenBots.Open3270Library", "OpenBots.Open3270Library\OpenBots.Open3270Library.csproj", "{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,16 +32,18 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{0C1C4A52-4B1A-49E3-B980-B11C6D8B51EE}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Debug|Win32.Build.0 = Debug|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Win32.ActiveCfg = Release|Any CPU
+		{1DAA72F0-6ACC-44EA-B34A-1A2689EA9899}.Release|Win32.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

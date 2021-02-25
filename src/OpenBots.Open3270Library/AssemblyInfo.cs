@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Open3270 TN3270 Library ")]
+[assembly: AssemblyTitle("OpenBots.Open3270Library ")]
 [assembly: AssemblyDescription("A TN3270 library for .Net applications")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Open3270")]
@@ -31,7 +31,7 @@ using System.Runtime.CompilerServices;
 // You can specify all the values or you can default the Revision and Build Numbers 
 // by using the '*' as shown below:
 
-[assembly: AssemblyVersion("1.6.0.0")]
+[assembly: AssemblyVersion("1.0.0.0")]
 
 //
 // In order to sign your assembly you must specify a key to use. Refer to the 
